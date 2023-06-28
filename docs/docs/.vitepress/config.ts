@@ -6,6 +6,7 @@ import { fileURLToPath, URL } from 'node:url'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/monorepo-app' : '/',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     [
