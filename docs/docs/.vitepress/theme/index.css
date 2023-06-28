@@ -1,0 +1,95 @@
+:root {
+  --c-brand: #10b981;
+  --c-brand-light: #34d399;
+  --vp-code-block-bg: #f9fafb;
+  --vp-code-line-highlight-color: rgb(0 0 0 / 50%);
+  --vp-code-line-number-color: var(--vp-c-text-dark-3);
+  --vp-code-copy-code-hover-bg: rgb(255 255 255 / 5%);
+  --vp-code-copy-code-active-text: var(--vp-c-bg-alt);
+  --vp-font-family-mono: monospace;
+  --demi-border-color: #ebedf1;
+}
+
+html.dark {
+  --c-brand: #3aa675;
+  --c-brand-light: #349469;
+  --c-bg: #22272e;
+  --c-bg-light: #2b313a;
+  --c-bg-lighter: #262c34;
+  --c-text: #adbac7;
+  --c-text-light: #96a7b7;
+  --c-text-lighter: #8b9eb0;
+  --c-text-lightest: #8094a8;
+  --c-border: #3e4c5a;
+  --c-border-dark: #34404c;
+  --c-divider: #34404c;
+  --c-tip: #318a62;
+  --c-warning: #ceab00;
+  --c-warning-bg: #7e755b;
+  --c-warning-title: #ceac03;
+  --c-warning-text: #362e00;
+  --c-danger: #940000;
+  --c-danger-bg: #806161;
+  --c-danger-title: #610000;
+  --c-danger-text: #3a0000;
+  --c-details-bg: #323843;
+  --code-hl-bg-color: #363b46;
+}
+
+.dark {
+  --vp-code-block-bg: var(--vp-c-bg-alt);
+}
+
+.vp-doc [class*='language-']::before {
+  color: var(--vp-c-text-2);
+}
+
+@media (min-width: 640px) {
+  .vp-doc div[class*='language-'] {
+    margin: 16px 0;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 639px) {
+  .vp-doc div[class*='language-'] {
+    border-radius: 4px;
+  }
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+  font-size: 15px;
+}
+
+.vp-doc tr {
+  border-top: 1px solid var(--demi-border-color);
+}
+
+.vp-doc tr:nth-child(2n) {
+  background-color: unset;
+}
+
+.vp-doc th,
+.vp-doc td {
+  padding: 10px 20px;
+  border: 1px solid var(--demi-border-color);
+}
+
+.vp-doc th {
+  font-size: 15px;
+  font-weight: 600;
+  background-color: var(--vp-c-white-soft);
+}
+
+.vp-doc table td:first-child {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+body {
+  font-family: 'Fira Sans', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+}

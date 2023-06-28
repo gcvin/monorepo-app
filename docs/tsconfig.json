@@ -1,0 +1,13 @@
+{
+  "include": ["docs/.vitepress/**/*", "../packages/ui/**/*"],
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "composite": true,
+    "baseUrl": ".",
+    "rootDir": "../",
+    "paths": {
+      "@ui/*": ["../packages/ui/*"]
+    }
+  }
+}

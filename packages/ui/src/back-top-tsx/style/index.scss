@@ -1,0 +1,19 @@
+:root {
+  --cus-back-top-tsx-right: 40px;
+  --cus-back-top-tsx-bottom: 40px;
+  --cus-back-top-tsx-button-size: 40px;
+}
+
+.cus-back-top-tsx {
+  --van-button-primary-background: #07c160;
+  --van-button-primary-border-color: #07c160;
+
+  position: fixed;
+  right: var(--cus-back-top-tsx-right);
+  bottom: var(--cus-back-top-tsx-bottom);
+
+  .van-button[cus-back-top-tsx] {
+    width: var(--cus-back-top-tsx-button-size);
+    height: var(--cus-back-top-tsx-button-size);
+  }
+}

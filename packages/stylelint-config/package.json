@@ -1,0 +1,28 @@
+{
+  "name": "@gcvin/stylelint-config",
+  "private": true,
+  "main": "index.js",
+  "version": "1.0.0",
+  "description": "Stylelint Config.",
+  "peerDependencies": {
+    "postcss": ">=8.0.0",
+    "prettier": ">=2.0.0",
+    "stylelint": ">=14.0.0"
+  },
+  "dependencies": {
+    "postcss-html": "^1.5.0",
+    "postcss-less": "^6.0.0",
+    "postcss-scss": "^4.0.6",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recess-order": "^3.1.0",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-order": "^6.0.1",
+    "stylelint-prettier": "^2.0.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.24",
+    "prettier": "^2.8.8",
+    "stylelint": "^14.16.1"
+  }
+}
