@@ -10,7 +10,7 @@
     <el-checkbox-group :model-value="checkedList" @change="onCheckAllGroup">
       <el-checkbox
         v-for="(item, index) in list"
-        :key="item.id"
+        :key="item.id + ''"
         :label="item.id"
         :disabled="item.disabled"
         :style="itemStyle"

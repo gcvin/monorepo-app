@@ -1,18 +1,53 @@
-import { nextTick } from 'vue'
+import { nextTick, ref } from 'vue'
 import { mount } from '@vue/test-utils'
 import { describe, test, expect } from 'vitest'
 import { CheckAll } from '../index'
+import type { CheckboxGroupValueType } from 'element-plus'
+import { ElCheckbox, ElCheckboxGroup } from 'element-plus'
 
 describe('CheckAll', () => {
   test('render', async () => {
-    const wrapper = mount(CheckAll, {
-      props: {
-        list: [{ id: 0, label: 1 }],
-        checkedAll: false,
-        checkedList: [0],
-      },
-    })
+    const list = ref([
+      { id: 0, label: '1' },
+      { id: 1, label: '2' },
+    ])
+    const checkedAll = ref(false)
+    const checkedList = ref<CheckboxGroupValueType>([0])
+    const wrapper = mount(
+      () => (
+        <CheckAll
+          list={list.value}
+          checkedAll={checkedAll.value}
+          checkedList={checkedList.value}
+          onUpdate:checkedAll={(val) => (checkedAll.value = val)}
+          onUpdate:checkedList={(val) =>
+            (checkedList.value = val as CheckboxGroupValueType)
+          }
+        />
+      ),
+      { attachTo: document.body }
+    )
+
     await nextTick()
-    expect(wrapper.find('.is-checked').text()).toBe('1')
+    const checkbox = wrapper.findComponent(ElCheckbox)
+    const checkboxGroup = wrapper.findComponent(ElCheckboxGroup)
+    expect(checkedAll.value).toBe(false)
+    expect(checkedList.value).toStrictEqual([0])
+
+    await checkbox.find('input').trigger('click')
+    expect(checkedAll.value).toBe(true)
+    expect(checkedList.value).toStrictEqual([0, 1])
+
+    await checkbox.find('input').trigger('click')
+    expect(checkedAll.value).toBe(false)
+    expect(checkedList.value).toStrictEqual([])
+
+    await checkboxGroup.findAll('input')[0].trigger('click')
+    expect(checkedAll.value).toBe(false)
+    expect(checkedList.value).toStrictEqual([0])
+
+    await checkboxGroup.findAll('input')[1].trigger('click')
+    expect(checkedAll.value).toBe(true)
+    expect(checkedList.value).toStrictEqual([0, 1])
   })
 })
