@@ -4382,6 +4382,18 @@ html:not(.dark) .VPImage.dark[data-v-604d2946] {
 
 .cus-check-all-tsx {
   --el-color-primary: #67c23a;
+}
+
+.cus-expand-collapse {
+  .ellipsis {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+  }
+
+  .action {
+    cursor: pointer;
+  }
 }:root {
   --c-brand: #10b981;
   --c-brand-light: #34d399;
