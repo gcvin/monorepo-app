@@ -11,7 +11,7 @@ describe('ExpandCollapse', () => {
           text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
           width="200px"
           line={3}
-          style={{ lineHeight: '24px' }}
+          lineHeight="24px"
         />
       ),
       { attachTo: document.body }

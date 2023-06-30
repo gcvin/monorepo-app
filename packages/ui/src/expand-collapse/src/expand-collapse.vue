@@ -8,14 +8,23 @@
       {{ props.text }}
     </div>
     <template v-if="showExpand">
-      <a v-if="!isExpand" class="action" @click="isExpand = true">展开</a>
-      <a v-else class="action" @click="isExpand = false">收起</a>
+      <a
+        v-if="!isExpand"
+        class="action"
+        href="javascript:;"
+        @click="isExpand = true"
+      >
+        展开
+      </a>
+      <a v-else class="action" href="javascript:;" @click="isExpand = false">
+        收起
+      </a>
     </template>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ref, watch, onMounted, nextTick } from 'vue'
+import { ref, watch, onMounted } from 'vue'
 import { createNamespace } from '../../utils'
 import { expandCollapseProps } from './props'
 
@@ -34,7 +43,7 @@ const textRef = ref<HTMLDivElement | null>(null)
 const init = () => {
   if (!textRef.value) return
   const style = getComputedStyle(textRef.value)
-  if (parseInt(style.height) / parseInt(style.lineHeight) > props.line) {
+  if (parseInt(style.height) / parseInt(props.lineHeight) > props.line) {
     isExpand.value = false
     showExpand.value = true
   }

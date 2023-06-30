@@ -97,7 +97,10 @@ const addComponent = async (name: string, type?: string) => {
 
 const modComponent = async (name: string) => {
   const scssPath = path.resolve(process.cwd(), 'src/index.scss')
-  await fs.appendFile(scssPath, `@import url('./${name}/style/index.scss');\n`)
+  await fs.appendFile(
+    scssPath,
+    `@use './${name}/style/index.scss' as ${name};\n`
+  )
   console.log(`已修改：${scssPath}`)
 
   const tsPath = path.resolve(process.cwd(), 'src/index.ts')

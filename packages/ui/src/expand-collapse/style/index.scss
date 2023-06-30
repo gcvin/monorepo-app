@@ -1,3 +1,7 @@
+:root {
+  --cus-expand-collapse-color: #67c23a;
+}
+
 .cus-expand-collapse {
   .ellipsis {
     display: -webkit-box;
@@ -6,6 +10,7 @@
   }
 
   .action {
+    color: var(--cus-expand-collapse-color);
     cursor: pointer;
   }
 }
