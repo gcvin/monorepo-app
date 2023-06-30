@@ -4345,15 +4345,13 @@ html:not(.dark) .VPImage.dark[data-v-604d2946] {
 .cus-back-top {
   --van-button-primary-background: #faab0c;
   --van-button-primary-border-color: #faab0c;
-
   position: fixed;
   right: var(--cus-back-top-right);
   bottom: var(--cus-back-top-bottom);
-
-  .van-button[cus-back-top] {
-    width: var(--cus-back-top-button-size);
-    height: var(--cus-back-top-button-size);
-  }
+}
+.cus-back-top .van-button[cus-back-top] {
+  width: var(--cus-back-top-button-size);
+  height: var(--cus-back-top-button-size);
 }
 
 :root {
@@ -4365,15 +4363,13 @@ html:not(.dark) .VPImage.dark[data-v-604d2946] {
 .cus-back-top-tsx {
   --van-button-primary-background: #07c160;
   --van-button-primary-border-color: #07c160;
-
   position: fixed;
   right: var(--cus-back-top-tsx-right);
   bottom: var(--cus-back-top-tsx-bottom);
-
-  .van-button[cus-back-top-tsx] {
-    width: var(--cus-back-top-tsx-button-size);
-    height: var(--cus-back-top-tsx-button-size);
-  }
+}
+.cus-back-top-tsx .van-button[cus-back-top-tsx] {
+  width: var(--cus-back-top-tsx-button-size);
+  height: var(--cus-back-top-tsx-button-size);
 }
 
 .cus-check-all {
@@ -4384,16 +4380,18 @@ html:not(.dark) .VPImage.dark[data-v-604d2946] {
   --el-color-primary: #67c23a;
 }
 
-.cus-expand-collapse {
-  .ellipsis {
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-  }
+:root {
+  --cus-expand-collapse-color: #67c23a;
+}
 
-  .action {
-    cursor: pointer;
-  }
+.cus-expand-collapse .ellipsis {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.cus-expand-collapse .action {
+  color: var(--cus-expand-collapse-color);
+  cursor: pointer;
 }:root {
   --c-brand: #10b981;
   --c-brand-light: #34d399;
