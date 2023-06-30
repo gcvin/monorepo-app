@@ -7,5 +7,6 @@ declare module '@vue/runtime-core' {
     CusBackTopTsx: typeof import('@gcvin/ui')['BackTopTsx']
     CusCheckAll: typeof import('@gcvin/ui')['CheckAll']
     CusCheckAllTsx: typeof import('@gcvin/ui')['CheckAllTsx']
+    ExpandCollapse: typeof import('@gcvin/ui')['ExpandCollapse']
   }
 }

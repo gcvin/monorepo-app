@@ -5,7 +5,7 @@ import { <%= pascalCaseName %> } from '../index'
 
 describe('<%= pascalCaseName %>', () => {
   test('render', async () => {
-    const wrapper = mount(<%= pascalCaseName %>)
+    const wrapper = mount(() => <<%= pascalCaseName %> />)
     await nextTick()
     expect(wrapper.text()).toBe('<%= pascalCaseName %>')
   })

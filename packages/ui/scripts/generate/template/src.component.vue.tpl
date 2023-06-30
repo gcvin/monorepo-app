@@ -1,5 +1,5 @@
 <template>
-  <button :class="bem()"><%= pascalCaseName %></button>
+  <div :class="bem()"><%= pascalCaseName %></div>
 </template>
 
 <script lang="ts" setup>

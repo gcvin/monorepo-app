@@ -10,11 +10,20 @@ export type CheckAllTsxItem = {
 
 export const checkAllTsxProps = {
   /**
-   * 类型定义
+   * 选项列表，列表项必须包含 id、label 属性
    */
   list: makeRequiredProp<PropType<CheckAllTsxItem[]>>(Array),
+  /**
+   * 选项样式
+   */
   itemStyle: makeStringProp(''),
+  /**
+   * 已选列表，列表项为 id
+   */
   checkedList: makeRequiredProp<PropType<CheckboxGroupValueType>>(Array),
+  /**
+   * 是否全选
+   */
   checkedAll: makeRequiredProp(Boolean),
 }
 

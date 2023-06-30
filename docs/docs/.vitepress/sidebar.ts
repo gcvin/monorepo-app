@@ -7,6 +7,7 @@ export const sidebar = {
         { text: 'BackTopTsx', link: '/component/back-top-tsx/README' },
         { text: 'CheckAll', link: '/component/check-all/README' },
         { text: 'CheckAllTsx', link: '/component/check-all-tsx/README' },
+        { text: 'ExpandCollapse', link: '/component/expand-collapse/README' },
       ],
     },
   ],

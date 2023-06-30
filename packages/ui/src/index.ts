@@ -3,13 +3,15 @@ import { BackTop } from './back-top'
 import { BackTopTsx } from './back-top-tsx'
 import { CheckAll } from './check-all'
 import { CheckAllTsx } from './check-all-tsx'
+import { ExpandCollapse } from './expand-collapse'
 
 export * from './back-top'
 export * from './back-top-tsx'
 export * from './check-all'
 export * from './check-all-tsx'
+export * from './expand-collapse'
 
-const components = [BackTop, BackTopTsx, CheckAll, CheckAllTsx]
+const components = [BackTop, BackTopTsx, CheckAll, CheckAllTsx, ExpandCollapse]
 
 export function install(app: App) {
   components.forEach((item) => {

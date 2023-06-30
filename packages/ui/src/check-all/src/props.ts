@@ -10,11 +10,20 @@ export type CheckAllItem = {
 
 export const checkAllProps = {
   /**
-   * 类型定义
+   * 选项列表，列表项必须包含 id、label 属性
    */
   list: makeRequiredProp<PropType<CheckAllItem[]>>(Array),
+  /**
+   * 选项样式
+   */
   itemStyle: makeStringProp(''),
+  /**
+   * 已选列表，列表项为 id
+   */
   checkedList: makeRequiredProp<PropType<CheckboxGroupValueType>>(Array),
+  /**
+   * 是否全选
+   */
   checkedAll: makeRequiredProp(Boolean),
 }
 

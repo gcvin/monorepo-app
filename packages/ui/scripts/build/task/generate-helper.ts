@@ -24,11 +24,11 @@ const reComponentName: ReComponentName = (title) => {
 
 /**
  * 重写文档路径
- * @example src/back-top/README.md -> https://github.com/gcvin/monorepo-app/components/back-top/
+ * @example src/back-top/README.md -> https://gcvin.github.io/monorepo-app/component/back-top/README.html
  */
 const reDocUrl: ReDocUrl = (_, header, path) => {
-  const docs = 'https://github.com/gcvin/monorepo-app/components/'
-  const name = path?.split('/')[1] + '/'
+  const docs = 'https://gcvin.github.io/monorepo-app/component/'
+  const name = path?.split('/').slice(-2).join('/').replace('.md', '.html')
   const _header = header
     ? header.replace(/[ ]+/g, '-').toLowerCase()
     : undefined
