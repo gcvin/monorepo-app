@@ -14,7 +14,7 @@ export default defineComponent({
   emits: ['change'],
 
   setup(props, { emit }) {
-    const inputRef = ref<InputInstance>(null)
+    const inputRef = ref<InputInstance | null>(null)
     const isEdit = ref(false)
     const inputText = ref('')
 
