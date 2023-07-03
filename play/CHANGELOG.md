@@ -1,5 +1,12 @@
 # @gcvin/play
 
+## 1.0.3
+
+### Patch Changes
+
+- Updated dependencies [[`872d020`](https://github.com/gcvin/monorepo-app/commit/872d02002d2b56b6ecb6d5e509e622ad3fd76a6a)]:
+  - @gcvin/ui@1.1.2
+
 ## 1.0.2
 
 ### Patch Changes
