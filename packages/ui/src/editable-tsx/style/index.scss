@@ -1,0 +1,24 @@
+:root {
+  --cus-editable-tsx-input-height: 24px;
+  --cus-editable-tsx-font-size: 14px;
+  --cus-editable-tsx-color: #67c23a;
+}
+
+.cus-editable-tsx {
+  --el-font-size-base: var(--cus-editable-tsx-font-size);
+
+  display: flex;
+  font-size: var(--cus-editable-tsx-font-size);
+  line-height: var(--cus-editable-tsx-input-height);
+  color: var(--cus-editable-tsx-color);
+  word-break: break-all;
+
+  .el-input__wrapper {
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .el-input__inner {
+    --el-input-inner-height: var(--cus-editable-tsx-input-height);
+  }
+}

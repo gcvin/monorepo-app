@@ -23,6 +23,10 @@ export const sidebar = {
           text: 'ExpandCollapse',
           link: '/component/expand-collapse/README',
         },
+        {
+          text: 'EditableTsx',
+          link: '/component/editable-tsx/README',
+        },
       ],
     },
   ],
