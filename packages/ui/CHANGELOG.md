@@ -1,5 +1,11 @@
 # @gcvin/ui
 
+## 1.1.2
+
+### Patch Changes
+
+- [`872d020`](https://github.com/gcvin/monorepo-app/commit/872d02002d2b56b6ecb6d5e509e622ad3fd76a6a) Thanks [@gcvin](https://github.com/gcvin)! - add editable-tsx component
+
 ## 1.1.1
 
 ### Patch Changes
