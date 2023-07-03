@@ -9,9 +9,7 @@ export default defineComponent({
 
   props: <%= camelCaseName %>Props,
 
-  emits: ['click'],
-
   setup() {
-    return () => <button class={bem()}><%= pascalCaseName %></button>
+    return () => <div class={bem()}><%= pascalCaseName %></div>
   },
 })

@@ -3,5 +3,5 @@
 }
 
 .cus-<%= name %> {
-  color: var(--cus-<%= name %>-color)
+  color: var(--cus-<%= name %>-color);
 }

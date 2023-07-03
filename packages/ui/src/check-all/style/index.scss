@@ -1,3 +1,7 @@
 .cus-check-all {
   --el-color-primary: #e6a23c;
+
+  .el-checkbox-group .el-checkbox {
+    display: flex;
+  }
 }

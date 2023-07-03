@@ -114,12 +114,11 @@ const modComponent = async (name: string) => {
 
   // 第二个空行
   index = lines.indexOf('', index + 2)
-  lines.splice(
-    index + 1,
-    1,
-    lines[index + 1].slice(0, -1) + `, ${pascalCaseName}]`
-  )
   lines.splice(index, 0, `export * from './${name}'`)
+
+  // 第三个空行
+  index = lines.indexOf('', index + 2)
+  lines.splice(index - 1, 0, `  ${pascalCaseName},`)
 
   await fs.writeFile(tsPath, lines.join('\n'))
   console.log(`已修改：${tsPath}`)
@@ -144,7 +143,10 @@ const modComponent = async (name: string) => {
   lines.splice(
     -5,
     0,
-    `        { text: '${pascalCaseName}', link: '/component/${name}/README' },`
+    `        {
+          text: '${pascalCaseName}',
+          link: '/component/${name}/README',
+        },`
   )
   await fs.writeFile(docsPath, lines.join('\n'))
   console.log(`已修改：${docsPath}`)

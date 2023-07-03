@@ -11,7 +11,14 @@ export * from './check-all'
 export * from './check-all-tsx'
 export * from './expand-collapse'
 
-const components = [BackTop, BackTopTsx, CheckAll, CheckAllTsx, ExpandCollapse]
+const components = [
+  /* 阻止 prettier 格式化 */
+  BackTop,
+  BackTopTsx,
+  CheckAll,
+  CheckAllTsx,
+  ExpandCollapse,
+]
 
 export function install(app: App) {
   components.forEach((item) => {
