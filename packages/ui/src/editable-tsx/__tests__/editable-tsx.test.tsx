@@ -5,8 +5,8 @@ import { EditableTsx } from '../index'
 
 describe('EditableTsx', () => {
   test('render', async () => {
-    const wrapper = mount(() => <EditableTsx />)
+    const wrapper = mount(() => <EditableTsx text="test" />)
     await nextTick()
-    expect(wrapper.text()).toBe('EditableTsx')
+    expect(wrapper.text()).toBe('test')
   })
 })

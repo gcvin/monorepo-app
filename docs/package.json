@@ -11,8 +11,8 @@
     "@ruabick/vite-plugin-gen-temp": "^0.3.3",
     "@ruabick/vitepress-demo-block": "^0.3.3",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
-    "element-plus": "^2.3.6",
-    "vant": "^4.5.0",
-    "vitepress": "1.0.0-beta.3"
+    "element-plus": "^2.3.7",
+    "vant": "^4.6.2",
+    "vitepress": "1.0.0-beta.5"
   }
 }
