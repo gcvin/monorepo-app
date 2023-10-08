@@ -6,7 +6,6 @@
     "dev": "vite"
   },
   "dependencies": {
-    "@gcvin/ui": "workspace:^",
     "element-plus": "^2.3.14",
     "vant": "^4.7.1",
     "vue": "^3.3.4"

@@ -48,8 +48,9 @@ export function CusResolver(
   return {
     type: 'component',
     resolve: (name: string) => {
-      if (name.startsWith('Cus')) {
-        const partialName = name.slice(3)
+      const prefix = 'Cus'
+      if (name.startsWith(prefix)) {
+        const partialName = name.slice(prefix.length)
         return {
           name: partialName,
           from: `@gcvin/ui/${moduleType}`,

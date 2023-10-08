@@ -2,7 +2,6 @@ import { defineConfig } from 'vitepress'
 import { applyPlugins } from '@ruabick/md-demo-plugins'
 import { genTemp } from '@ruabick/vite-plugin-gen-temp'
 import { sidebar } from './sidebar'
-import { fileURLToPath, URL } from 'node:url'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
 export default defineConfig({
@@ -46,11 +45,6 @@ export default defineConfig({
   },
   vite: {
     plugins: [genTemp(), vueJsx()],
-    resolve: {
-      alias: {
-        '@ui': fileURLToPath(new URL('../../../packages/ui', import.meta.url)),
-      },
-    },
     build: {
       cssMinify: false,
     },

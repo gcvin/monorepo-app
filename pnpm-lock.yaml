@@ -66,6 +66,9 @@ importers:
 
   docs:
     devDependencies:
+      '@gcvin/ui':
+        specifier: workspace:^
+        version: link:../packages/ui
       '@ruabick/md-demo-plugins':
         specifier: ^0.3.3
         version: 0.3.3(@algolia/client-search@4.20.0)(@types/node@20.5.1)(search-insights@2.8.2)
@@ -294,9 +297,6 @@ importers:
 
   play:
     dependencies:
-      '@gcvin/ui':
-        specifier: workspace:^
-        version: link:../packages/ui
       element-plus:
         specifier: ^2.3.14
         version: 2.3.14(vue@3.3.4)

@@ -42,7 +42,7 @@
 <script lang="ts" setup>
 import { ElRate } from 'element-plus'
 import { Button } from 'vant'
-import { BackTop, BackTopTsx, CheckAll, CheckAllTsx } from '@gcvin/ui'
+import { BackTop, BackTopTsx, CheckAll, CheckAllTsx } from '@ui/src'
 import { ref } from 'vue'
 
 const list = ref(
