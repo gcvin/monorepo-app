@@ -11,8 +11,8 @@ export default defineConfig({
   test: {
     clearMocks: true,
     environment: 'happy-dom',
-    transformMode: {
-      web: [/\.[jt]sx$/],
+    testTransformMode: {
+      web: ['\\.[jt]sx$'],
     },
   },
 })
