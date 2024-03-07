@@ -1,6 +1,7 @@
 import path from 'path'
 import prompts from 'prompts'
 import fs from 'fs-extra'
+import os from 'os'
 import _ from 'lodash-es'
 import { URL, fileURLToPath } from 'node:url'
 
@@ -99,14 +100,14 @@ const modComponent = async (name: string) => {
   const scssPath = path.resolve(process.cwd(), 'src/index.scss')
   await fs.appendFile(
     scssPath,
-    `@use './${name}/style/index.scss' as ${name};\n`
+    `@use './${name}/style/index.scss' as ${name};${os.EOL}`
   )
   console.log(`已修改：${scssPath}`)
 
   const tsPath = path.resolve(process.cwd(), 'src/index.ts')
   const pascalCaseName = _.upperFirst(_.camelCase(name))
   let data = await fs.readFile(tsPath, 'utf-8')
-  let lines = data.split('\n')
+  let lines = data.split(os.EOL)
 
   // 第一个空行
   let index = lines.indexOf('')
@@ -120,18 +121,18 @@ const modComponent = async (name: string) => {
   index = lines.indexOf('', index + 2)
   lines.splice(index - 1, 0, `  ${pascalCaseName},`)
 
-  await fs.writeFile(tsPath, lines.join('\n'))
+  await fs.writeFile(tsPath, lines.join(os.EOL))
   console.log(`已修改：${tsPath}`)
 
   const dtsPath = path.resolve(process.cwd(), 'global.d.ts')
   data = await fs.readFile(dtsPath, 'utf-8')
-  lines = data.split('\n')
+  lines = data.split(os.EOL)
   lines.splice(
     -3,
     0,
-    `    ${pascalCaseName}: typeof import('@gcvin/ui')['${pascalCaseName}']`
+    `    ${pascalCaseName}: (typeof import('@gcvin/ui'))['${pascalCaseName}']`
   )
-  await fs.writeFile(dtsPath, lines.join('\n'))
+  await fs.writeFile(dtsPath, lines.join(os.EOL))
   console.log(`已修改：${dtsPath}`)
 
   const docsPath = path.resolve(
@@ -139,7 +140,7 @@ const modComponent = async (name: string) => {
     '../../docs/docs/.vitepress/sidebar.ts'
   )
   data = await fs.readFile(docsPath, 'utf-8')
-  lines = data.split('\n')
+  lines = data.split(os.EOL)
   lines.splice(
     -5,
     0,
@@ -148,7 +149,7 @@ const modComponent = async (name: string) => {
           link: '/component/${name}/README',
         },`
   )
-  await fs.writeFile(docsPath, lines.join('\n'))
+  await fs.writeFile(docsPath, lines.join(os.EOL))
   console.log(`已修改：${docsPath}`)
 }
 
