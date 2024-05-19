@@ -1,3 +1,7 @@
 <template>
-  <cus-<%= name %> />
+  <<%= name %> />
 </template>
+
+<script lang="ts" setup>
+import { <%= pascalCaseName %> } from '@gcvin/ui'
+</script>

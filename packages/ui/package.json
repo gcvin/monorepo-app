@@ -69,7 +69,7 @@
     "rollup": "^3.29.4",
     "rollup-plugin-esbuild": "^6.0.2",
     "sass": "^1.69.0",
-    "tsx": "^3.13.0",
+    "tsx": "^4.10.5",
     "typescript": "^5.2.2",
     "unplugin-vue-components": "^0.25.2",
     "vant": "^4.7.1",

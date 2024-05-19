@@ -1,9 +1,13 @@
 <template>
   <div id="back-top-target">
     <div class="content"></div>
-    <cus-back-top target="#back-top-target" />
+    <back-top target="#back-top-target" />
   </div>
 </template>
+
+<script lang="ts" setup>
+import { BackTop } from '@gcvin/ui'
+</script>
 
 <style scoped>
 #back-top-target {

@@ -21,12 +21,12 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-import type { CheckboxValueType } from 'element-plus'
+<script lang="ts" setup generic="T">
+import type { CheckboxValueType, CheckboxGroupValueType } from 'element-plus'
 import { ElCheckbox, ElCheckboxGroup } from 'element-plus'
 import { computed } from 'vue'
 import { createNamespace } from '../../utils'
-import { checkAllProps } from './props'
+import type { CheckAllItem } from './props'
 
 const [_, bem] = createNamespace('check-all')
 
@@ -34,7 +34,14 @@ defineOptions({
   name: 'cus-check-all',
 })
 
-const props = defineProps(checkAllProps)
+type Props = {
+  list: CheckAllItem[]
+  itemStyle: string
+  checkedList: CheckboxGroupValueType
+  checkedAll: boolean
+}
+
+const props = defineProps<Props>()
 const emit = defineEmits<{
   (e: 'update:checkedAll', checked: boolean): void
   (e: 'update:checkedList', list: CheckboxValueType[]): void

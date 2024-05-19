@@ -1,5 +1,5 @@
 <template>
-  <cus-check-all
+  <check-all
     v-model:checked-all="checkedAll"
     v-model:checked-list="checkedList"
     :list="list"
@@ -8,6 +8,8 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { CheckAll } from '@gcvin/ui'
+
 const checkedList = ref([0])
 const checkedAll = ref(false)
 const list = ref([
