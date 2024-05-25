@@ -26,7 +26,7 @@ import type { CheckboxValueType, CheckboxGroupValueType } from 'element-plus'
 import { ElCheckbox, ElCheckboxGroup } from 'element-plus'
 import { computed } from 'vue'
 import { createNamespace } from '../../utils'
-import type { CheckAllItem } from './props'
+import { checkAllProps } from './props'
 
 const [_, bem] = createNamespace('check-all')
 
@@ -34,14 +34,7 @@ defineOptions({
   name: 'cus-check-all',
 })
 
-type Props = {
-  list: CheckAllItem[]
-  itemStyle: string
-  checkedList: CheckboxGroupValueType
-  checkedAll: boolean
-}
-
-const props = defineProps<Props>()
+const props = defineProps(checkAllProps)
 const emit = defineEmits<{
   (e: 'update:checkedAll', checked: boolean): void
   (e: 'update:checkedList', list: CheckboxValueType[]): void

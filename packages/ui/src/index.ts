@@ -25,7 +25,7 @@ const components = [
 
 export function install(app: App) {
   components.forEach((item) => {
-    if (item.install!) {
+    if ('install' in item) {
       app.use(item)
     } else if (item.name) {
       app.component(item.name, item)

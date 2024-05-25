@@ -66,9 +66,6 @@ importers:
 
   docs:
     devDependencies:
-      '@gcvin/ui':
-        specifier: workspace:^
-        version: link:../packages/ui
       '@ruabick/md-demo-plugins':
         specifier: ^0.3.3
         version: 0.3.3(@algolia/client-search@4.20.0)(@types/node@20.8.2)(sass@1.69.0)(search-insights@2.8.2)
