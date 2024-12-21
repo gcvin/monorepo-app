@@ -31,7 +31,7 @@ import { checkAllProps } from './props'
 const [_, bem] = createNamespace('check-all')
 
 defineOptions({
-  name: 'cus-check-all',
+  name: 'gcvin-check-all',
 })
 
 const props = defineProps(checkAllProps)

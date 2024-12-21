@@ -5,7 +5,7 @@ import { createApp } from 'vue'
 // GlobalRegister
 // import Vant from 'vant'
 // import ElementPlus from 'element-plus'
-// import Cus from '@ui/src'
+// import Gcvin from '@ui/src'
 // import GlobalRegister from './components/GlobalRegister.vue'
 // import 'vant/lib/index.css'
 // import 'element-plus/dist/index.css'
@@ -14,7 +14,7 @@ import { createApp } from 'vue'
 // const app = createApp(GlobalRegister)
 // app.use(Vant)
 // app.use(ElementPlus)
-// app.use(Cus)
+// app.use(Gcvin)
 // app.mount('#app')
 
 // ImportRegister

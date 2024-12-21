@@ -1,2 +1,2 @@
-export const PKG_NAME = 'cus'
-export const PKG_CAMELCASE_NAME = 'Cus'
+export const PKG_NAME = 'gcvin'
+export const PKG_CAMELCASE_NAME = 'Gcvin'

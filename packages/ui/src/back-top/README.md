@@ -50,6 +50,6 @@ import type { BackTopProps } from '@gcvin/ui'
 
 | 名称                       | 默认值 |
 | -------------------------- | ------ |
-| --cus-back-top-right       | 40px   |
-| --cus-back-top-bottom      | 40px   |
-| --cus-back-top-button-size | 40px   |
+| --gcvin-back-top-right       | 40px   |
+| --gcvin-back-top-bottom      | 40px   |
+| --gcvin-back-top-button-size | 40px   |

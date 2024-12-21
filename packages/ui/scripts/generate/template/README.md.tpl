@@ -47,4 +47,4 @@ import type { <%= pascalCaseName %>Props } from '@gcvin/ui'
 
 | 名称                          | 默认值  |
 | ----------------------------- | ------- |
-| --cus-<%= name %>-color       | #67c23a |
+| --gcvin-<%= name %>-color       | #67c23a |

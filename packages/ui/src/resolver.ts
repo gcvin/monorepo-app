@@ -13,7 +13,7 @@ const isSSR = Boolean(
 
 const moduleType = isSSR ? 'lib' : 'es'
 
-export interface CusResolverOptions {
+export interface GcvinResolverOptions {
   /**
    * import style css or scss along with components
    *
@@ -24,7 +24,7 @@ export interface CusResolverOptions {
 
 function getSideEffects(
   dirName: string,
-  options: CusResolverOptions
+  options: GcvinResolverOptions
 ): SideEffectsInfo | undefined {
   const { importStyle = true } = options
 
@@ -38,17 +38,17 @@ function getSideEffects(
 }
 
 /**
- * Resolver for Cus
+ * Resolver for Gcvin
  *
  * @link https://github.com/gcvin/monorepo-app
  */
-export function CusResolver(
-  options: CusResolverOptions = {}
+export function GcvinResolver(
+  options: GcvinResolverOptions = {}
 ): ComponentResolver {
   return {
     type: 'component',
     resolve: (name: string) => {
-      const prefix = 'Cus'
+      const prefix = 'Gcvin'
       if (name.startsWith(prefix)) {
         const partialName = name.slice(prefix.length)
         return {

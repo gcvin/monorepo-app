@@ -10,7 +10,7 @@
       @click.stop="handleClick"
     >
       <slot>
-        <Button type="primary" icon="back-top" round cus-back-top />
+        <Button type="primary" icon="back-top" round gcvin-back-top />
       </slot>
     </div>
   </transition>
@@ -28,7 +28,7 @@ import { backTopProps } from './props'
 const [_, bem] = createNamespace('back-top')
 
 defineOptions({
-  name: 'cus-back-top',
+  name: 'gcvin-back-top',
 })
 
 const props = defineProps(backTopProps)

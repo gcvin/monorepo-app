@@ -6,7 +6,7 @@ import { BackTopTsx } from '../index'
 describe('BackTopTsx.vue', () => {
   test('render', async () => {
     const wrapper = mount(
-      (_, { emit }) => (
+      () => (
         <div class="target" style="height: 100px; overflow: auto">
           <div style="height: 10000px; width: 100%">
             <BackTopTsx
@@ -14,7 +14,6 @@ describe('BackTopTsx.vue', () => {
               visibilityHeight={2000}
               right={100}
               bottom={200}
-              onClick={() => emit('click')}
             />
           </div>
         </div>
@@ -22,21 +21,21 @@ describe('BackTopTsx.vue', () => {
       { attachTo: document.body }
     )
     await nextTick()
-    expect(wrapper.find('.cus-back-top-tsx').exists()).toBe(false)
+    expect(wrapper.find('.gcvin-back-top-tsx').exists()).toBe(false)
 
     wrapper.element.scrollTop = 2000
     await wrapper.trigger('scroll')
-    expect(wrapper.find('.cus-back-top-tsx').exists()).toBe(true)
-    expect(wrapper.find('.cus-back-top-tsx').attributes('style')).toBe(
+    expect(wrapper.find('.gcvin-back-top-tsx').exists()).toBe(true)
+    expect(wrapper.find('.gcvin-back-top-tsx').attributes('style')).toBe(
       'right: 100px; bottom: 200px;'
     )
 
-    await wrapper.find('.cus-back-top-tsx').trigger('click')
+    await wrapper.find('.gcvin-back-top-tsx').trigger('click')
     expect(wrapper.emitted('click')).toBeDefined()
     await wrapper.trigger('scroll')
     await new Promise((resolve) => setTimeout(resolve, 200))
     expect(wrapper.element.scrollTop).toBe(0)
-    expect(wrapper.find('.cus-back-top-tsx').exists()).toBe(false)
+    expect(wrapper.find('.gcvin-back-top-tsx').exists()).toBe(false)
     wrapper.unmount()
   })
 

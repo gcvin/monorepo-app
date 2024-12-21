@@ -1,7 +1,7 @@
 :root {
-  --cus-<%= name %>-color: #67c23a;
+  --gcvin-<%= name %>-color: #67c23a;
 }
 
-.cus-<%= name %> {
-  color: var(--cus-<%= name %>-color);
+.gcvin-<%= name %> {
+  color: var(--gcvin-<%= name %>-color);
 }

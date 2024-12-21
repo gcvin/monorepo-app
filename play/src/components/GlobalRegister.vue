@@ -1,5 +1,5 @@
 <template>
-  <cus-check-all-tsx
+  <gcvin-check-all-tsx
     v-slot="{ index }"
     v-model:checkedList="checkedList"
     v-model:checkedAll="checkedAll"
@@ -14,8 +14,8 @@
         'var(--el-color-primary)',
       ]"
     />
-  </cus-check-all-tsx>
-  <!-- <cus-check-all
+  </gcvin-check-all-tsx>
+  <!-- <gcvin-check-all
     v-slot="{ index }"
     v-model:checkedList="checkedList"
     v-model:checkedAll="checkedAll"
@@ -30,13 +30,13 @@
         'var(--el-color-primary)',
       ]"
     />
-  </cus-check-all> -->
-  <cus-back-top-tsx>
+  </gcvin-check-all> -->
+  <gcvin-back-top-tsx>
     <van-button type="primary" icon="star" round></van-button>
-  </cus-back-top-tsx>
-  <!-- <cus-back-top>
+  </gcvin-back-top-tsx>
+  <!-- <gcvin-back-top>
     <van-button type="primary" icon="star" round></van-button>
-  </cus-back-top> -->
+  </gcvin-back-top> -->
 </template>
 
 <script lang="ts" setup>

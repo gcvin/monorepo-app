@@ -8,7 +8,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 //   VantResolver,
 //   ElementPlusResolver,
 // } from 'unplugin-vue-components/resolvers'
-// import { CusResolver } from '@gcvin/ui/lib/resolver'
+// import { GcvinResolver } from '@gcvin/ui/lib/resolver'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -16,7 +16,7 @@ export default defineConfig({
     vue(),
     vueJsx(),
     // Components({
-    //   resolvers: [VantResolver(), ElementPlusResolver(), CusResolver()],
+    //   resolvers: [VantResolver(), ElementPlusResolver(), GcvinResolver()],
     // }),
   ],
   resolve: {

@@ -1,6 +1,5 @@
 {
   "name": "@gcvin/eslint-config",
-  "private": true,
   "main": "index.js",
   "version": "1.0.0",
   "description": "Eslint Config.",

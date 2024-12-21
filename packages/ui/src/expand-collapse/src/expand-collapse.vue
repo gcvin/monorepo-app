@@ -31,7 +31,7 @@ import { expandCollapseProps } from './props'
 const [_, bem] = createNamespace('expand-collapse')
 
 defineOptions({
-  name: 'cus-expand-collapse',
+  name: 'gcvin-expand-collapse',
 })
 
 const props = defineProps(expandCollapseProps)

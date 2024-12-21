@@ -47,4 +47,4 @@ import type { EditableTsxProps } from '@gcvin/ui'
 
 | 名称                          | 默认值  |
 | ----------------------------- | ------- |
-| --cus-editable-tsx-color       | #67c23a |
+| --gcvin-editable-tsx-color       | #67c23a |

@@ -1,8 +1,8 @@
 :root {
-  --cus-expand-collapse-color: #67c23a;
+  --gcvin-expand-collapse-color: #67c23a;
 }
 
-.cus-expand-collapse {
+.gcvin-expand-collapse {
   .ellipsis {
     display: -webkit-box;
     overflow: hidden;
@@ -10,7 +10,7 @@
   }
 
   .action {
-    color: var(--cus-expand-collapse-color);
+    color: var(--gcvin-expand-collapse-color);
     cursor: pointer;
   }
 }

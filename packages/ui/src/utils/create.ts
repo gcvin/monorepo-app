@@ -1,7 +1,7 @@
 import { createBEM, createTranslate } from 'vant/es/utils'
 
 export function createNamespace(name: string) {
-  const prefixedName = `cus-${name}`
+  const prefixedName = `gcvin-${name}`
   return [
     prefixedName,
     createBEM(prefixedName),

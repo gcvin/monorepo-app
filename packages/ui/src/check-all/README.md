@@ -47,4 +47,4 @@ import type { CheckAllProps } from '@gcvin/ui'
 
 | 名称                          | 默认值  |
 | ----------------------------- | ------- |
-| --cus-check-all-color         | #67c23a |
+| --gcvin-check-all-color         | #67c23a |

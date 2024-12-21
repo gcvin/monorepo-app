@@ -70,7 +70,7 @@ export default defineComponent({
             {slots.default ? (
               slots.default()
             ) : (
-              <Button type="primary" icon="back-top" round cus-back-top-tsx />
+              <Button type="primary" icon="back-top" round gcvin-back-top-tsx />
             )}
           </div>
         ) : null}

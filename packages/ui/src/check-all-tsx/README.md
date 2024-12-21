@@ -47,4 +47,4 @@ import type { CheckAllTsxProps } from '@gcvin/ui'
 
 | 名称                          | 默认值  |
 | ----------------------------- | ------- |
-| --cus-check-all-tsx-color     | #67c23a |
+| --gcvin-check-all-tsx-color     | #67c23a |

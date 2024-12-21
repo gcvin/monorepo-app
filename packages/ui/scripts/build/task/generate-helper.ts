@@ -13,7 +13,7 @@ const { version } = require(compPackage)
 
 /**
  * 重写组件名称
- * @example BackTop -> cus-back-top
+ * @example BackTop -> gcvin-back-top
  */
 const reComponentName: ReComponentName = (title) => {
   return `${PKG_NAME}-${title
@@ -54,7 +54,7 @@ const reAttribute: ReAttribute = (value) => {
 
 /**
  * 重写 web-types 来源
- * @example BackTop -> CusBackTop
+ * @example BackTop -> GcvinBackTop
  */
 const reWebTypesSource: ReWebTypesSource = (title: string) => {
   const symbol = `${PKG_CAMELCASE_NAME}${title

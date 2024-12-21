@@ -1,16 +1,16 @@
 :root {
-  --cus-editable-tsx-input-height: 24px;
-  --cus-editable-tsx-font-size: 14px;
-  --cus-editable-tsx-color: #67c23a;
+  --gcvin-editable-tsx-input-height: 24px;
+  --gcvin-editable-tsx-font-size: 14px;
+  --gcvin-editable-tsx-color: #67c23a;
 }
 
-.cus-editable-tsx {
-  --el-font-size-base: var(--cus-editable-tsx-font-size);
+.gcvin-editable-tsx {
+  --el-font-size-base: var(--gcvin-editable-tsx-font-size);
 
   display: flex;
-  font-size: var(--cus-editable-tsx-font-size);
-  line-height: var(--cus-editable-tsx-input-height);
-  color: var(--cus-editable-tsx-color);
+  font-size: var(--gcvin-editable-tsx-font-size);
+  line-height: var(--gcvin-editable-tsx-input-height);
+  color: var(--gcvin-editable-tsx-color);
   word-break: break-all;
 
   .el-input__wrapper {
@@ -19,6 +19,6 @@
   }
 
   .el-input__inner {
-    --el-input-inner-height: var(--cus-editable-tsx-input-height);
+    --el-input-inner-height: var(--gcvin-editable-tsx-input-height);
   }
 }

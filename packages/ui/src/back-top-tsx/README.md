@@ -50,6 +50,6 @@ import type { BackTopTsxProps } from '@gcvin/ui'
 
 | 名称                       | 默认值 |
 | -------------------------- | ------ |
-| --cus-back-top-tsx-right       | 40px   |
-| --cus-back-top-tsx-bottom      | 40px   |
-| --cus-back-top-tsx-button-size | 40px   |
+| --gcvin-back-top-tsx-right       | 40px   |
+| --gcvin-back-top-tsx-bottom      | 40px   |
+| --gcvin-back-top-tsx-button-size | 40px   |

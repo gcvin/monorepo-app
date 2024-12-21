@@ -8,10 +8,10 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AutoRegister: (typeof import('./src/components/AutoRegister.vue'))['default']
-    CusBackTop: (typeof import('@gcvin/ui/es'))['BackTop']
-    CusBackTopTsx: (typeof import('@gcvin/ui/es'))['BackTopTsx']
-    CusCheckAll: (typeof import('@gcvin/ui/es'))['CheckAll']
-    CusCheckAllTsx: (typeof import('@gcvin/ui/es'))['CheckAllTsx']
+    GcvinBackTop: (typeof import('@gcvin/ui/es'))['BackTop']
+    GcvinBackTopTsx: (typeof import('@gcvin/ui/es'))['BackTopTsx']
+    GcvinCheckAll: (typeof import('@gcvin/ui/es'))['CheckAll']
+    GcvinCheckAllTsx: (typeof import('@gcvin/ui/es'))['CheckAllTsx']
     ElRate: (typeof import('element-plus/es'))['ElRate']
     GlobalRegister: (typeof import('./src/components/GlobalRegister.vue'))['default']
     ImportRegister: (typeof import('./src/components/ImportRegister.vue'))['default']

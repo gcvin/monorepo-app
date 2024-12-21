@@ -47,4 +47,4 @@ import type { ExpandCollapseProps } from '@gcvin/ui'
 
 | 名称                          | 默认值  |
 | ----------------------------- | ------- |
-| --cus-expand-collapse-color   | #67c23a |
+| --gcvin-expand-collapse-color   | #67c23a |
