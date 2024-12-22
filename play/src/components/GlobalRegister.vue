@@ -1,8 +1,8 @@
 <template>
   <gcvin-check-all-tsx
     v-slot="{ index }"
-    v-model:checkedList="checkedList"
-    v-model:checkedAll="checkedAll"
+    v-model:checked-list="checkedList"
+    v-model:checked-all="checkedAll"
     :list="list"
     item-style="display:block"
   >
@@ -32,7 +32,7 @@
     />
   </gcvin-check-all> -->
   <gcvin-back-top-tsx>
-    <van-button type="primary" icon="star" round></van-button>
+    <van-button type="primary" icon="star" round />
   </gcvin-back-top-tsx>
   <!-- <gcvin-back-top>
     <van-button type="primary" icon="star" round></van-button>

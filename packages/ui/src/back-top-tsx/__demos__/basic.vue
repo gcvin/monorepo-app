@@ -1,6 +1,6 @@
 <template>
   <div id="back-top-target">
-    <div class="content"></div>
+    <div class="content" />
     <back-top-tsx target="#back-top-target" />
   </div>
 </template>

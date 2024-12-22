@@ -12,6 +12,7 @@
     // Added again here in case some users decide to disable `strict`.
     // This enables stricter inference for data properties on `this`.
     "noImplicitThis": true,
+    "noImplicitAny": false,
     "strict": true,
 
     // Required in Vite

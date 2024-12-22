@@ -27,7 +27,7 @@ export default defineComponent({
     const target = shallowRef<HTMLElement | Window>(window)
 
     // 回到顶部
-    const handleClick = (event: MouseEvent) => {
+    const handleClick = (event: Event) => {
       emit('click', event)
 
       target.value.scrollTo({

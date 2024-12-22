@@ -17,8 +17,8 @@
   </CheckAllTsx> -->
   <CheckAll
     v-slot="{ index }"
-    v-model:checkedList="checkedList"
-    v-model:checkedAll="checkedAll"
+    v-model:checked-list="checkedList"
+    v-model:checked-all="checkedAll"
     :list="list"
     item-style="display:block"
   >
@@ -35,7 +35,7 @@
     <Button type="primary" icon="star" round></Button>
   </BackTopTsx> -->
   <BackTop>
-    <Button type="primary" icon="star" round></Button>
+    <Button type="primary" icon="star" round />
   </BackTop>
 </template>
 

@@ -59,7 +59,7 @@ export default defineComponent({
           {props.list.map((item, index) => (
             <ElCheckbox
               key={item.id + ''}
-              label={item.id}
+              value={item.id}
               disabled={item.disabled}
               style={props.itemStyle}
             >

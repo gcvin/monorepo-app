@@ -2,7 +2,6 @@ import { defineConfig } from 'vitepress'
 import { applyPlugins } from '@ruabick/md-demo-plugins'
 import { genTemp } from '@ruabick/vite-plugin-gen-temp'
 import { sidebar } from './sidebar'
-import vueJsx from '@vitejs/plugin-vue-jsx'
 
 export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? '/monorepo-app' : '/',
@@ -44,7 +43,7 @@ export default defineConfig({
     sidebar,
   },
   vite: {
-    plugins: [genTemp(), vueJsx()],
+    plugins: [genTemp()],
     build: {
       cssMinify: false,
     },

@@ -6,7 +6,7 @@ import { BackTop } from '../index'
 describe('BackTop.vue', () => {
   test('render', async () => {
     const wrapper = mount(
-      () => (
+      (_: any, { emit }: any) => (
         <div class="target" style="height: 100px; overflow: auto">
           <div style="height: 10000px; width: 100%">
             <BackTop
@@ -14,6 +14,7 @@ describe('BackTop.vue', () => {
               visibilityHeight={2000}
               right={100}
               bottom={200}
+              onClick={emit('click')}
             />
           </div>
         </div>

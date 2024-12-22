@@ -11,7 +11,7 @@
       <el-checkbox
         v-for="(item, index) in list"
         :key="item.id + ''"
-        :label="item.id"
+        :value="item.id"
         :disabled="item.disabled"
         :style="itemStyle"
       >
