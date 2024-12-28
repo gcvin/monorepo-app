@@ -2,7 +2,6 @@ import { dest, src } from 'gulp'
 import path from 'path'
 import dartSass from 'sass'
 import gulpSass from 'gulp-sass'
-import autoprefixer from 'gulp-autoprefixer'
 import cleanCSS from 'gulp-clean-css'
 import { rollup } from 'rollup'
 import esbuild from 'rollup-plugin-esbuild'
@@ -27,6 +26,7 @@ const buildScssCopy = async () => {
  */
 const buildScssModules = async () => {
   const sass = gulpSass(dartSass)
+  const { default: autoprefixer } = await import('gulp-autoprefixer')
   await new Promise((resolve) => {
     src(`${compRoot}/**/style/*.scss`)
       .pipe(sass.sync())
@@ -43,6 +43,7 @@ const buildScssModules = async () => {
  */
 const buildScssFull = async () => {
   const sass = gulpSass(dartSass)
+  const { default: autoprefixer } = await import('gulp-autoprefixer')
   await new Promise((resolve) => {
     src(`${compRoot}/*.scss`)
       .pipe(sass.sync())

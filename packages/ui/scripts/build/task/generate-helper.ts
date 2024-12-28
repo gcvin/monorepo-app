@@ -15,7 +15,7 @@ const { version } = require(compPackage)
  * 重写组件名称
  * @example BackTop -> gcvin-back-top
  */
-const reComponentName: ReComponentName = (title) => {
+const reComponentName: ReComponentName = (title: string) => {
   return `${PKG_NAME}-${title
     .replace(/\B([A-Z])/g, '-$1')
     .replace(/[ ]+/g, '-')
@@ -26,7 +26,7 @@ const reComponentName: ReComponentName = (title) => {
  * 重写文档路径
  * @example src/back-top/README.md -> https://gcvin.github.io/monorepo-app/component/back-top/README.html
  */
-const reDocUrl: ReDocUrl = (_, header, path) => {
+const reDocUrl: ReDocUrl = (_: any, header?: string, path?: string) => {
   const docs = 'https://gcvin.github.io/monorepo-app/component/'
   const name = path?.split('/').slice(-2).join('/').replace('.md', '.html')
   const _header = header
@@ -39,7 +39,7 @@ const reDocUrl: ReDocUrl = (_, header, path) => {
  * 重写组件属性
  * @example v-model -> model-value
  */
-const reAttribute: ReAttribute = (value) => {
+const reAttribute: ReAttribute = (value: string) => {
   switch (value) {
     case '':
     case '-':

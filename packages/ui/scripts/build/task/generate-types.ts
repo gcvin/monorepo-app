@@ -1,8 +1,8 @@
-import { execa } from 'execa'
 import { src, dest } from 'gulp'
 import { root, outputEsm, outputCjs } from '../utils/paths'
 
 export const generateTypes = async () => {
+  const { execa } = await import('execa')
   await execa('vue-tsc', ['-p', 'tsconfig.declaration.json'], {
     cwd: root,
   })
