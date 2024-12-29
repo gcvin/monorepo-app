@@ -10,7 +10,7 @@
   "jsdelivr": "dist/index.min.js",
   "scripts": {
     "gen": "tsx scripts/generate/component.mts",
-    "build": "gulp -f scripts/build/index.ts",
+    "build": "TS_NODE_PROJECT=tsconfig.node.json gulp -f scripts/build/index.ts",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage"

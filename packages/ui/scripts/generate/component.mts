@@ -2,7 +2,7 @@ import path from 'path'
 import prompts from 'prompts'
 import fs from 'fs-extra'
 import os from 'os'
-import _ from 'lodash-es'
+import _ from 'lodash'
 import { URL, fileURLToPath } from 'node:url'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))

@@ -11,4 +11,3 @@ declare module '@vue/runtime-core' {
     EditableTsx: (typeof import('@gcvin/ui'))['EditableTsx']
   }
 }
-declare module 'components-helper'

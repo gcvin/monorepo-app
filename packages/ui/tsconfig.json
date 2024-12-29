@@ -1,12 +1,10 @@
 {
-  "extends": "@tsconfig/node16/tsconfig.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "moduleResolution": "node16"
+    "outDir": "es",
+    "declaration": true,
+    "emitDeclarationOnly": true
   },
-  "include": ["global.d.ts"],
-  "ts-node": {
-    "esm": true,
-    "files": true,
-    "transpileOnly": true
-  }
+  "include": ["src"],
+  "exclude": ["node_modules", "**/__tests__/**", "**/__demos__/**", "**/*.md"]
 }

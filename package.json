@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Vue components.",
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "preinstall": "npx only-allow pnpm",
     "commit": "npx git-cz",
     "play:dev": "pnpm --filter=play dev",
